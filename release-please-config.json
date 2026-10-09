@@ -1,0 +1,17 @@
+{
+  "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
+  "bootstrap-sha": "c05d9868813ed27a1dd6dee3170dd9b284b86ee5",
+  "packages": {
+    ".": {
+      "release-type": "node",
+      "include-component-in-tag": false,
+      "extra-files": [
+        {
+          "type": "json",
+          "path": "plugins/plex/plugin.json",
+          "jsonpath": "$.version"
+        }
+      ]
+    }
+  }
+}
